@@ -1,7 +1,12 @@
 pipeline {
   agent any
-  stages {
+   stages {
     stage('Plan') {
+      steps {
+        sh 'echo "DEV,UAT,Prod"'
+      }
+
+      stage('Sprint1') {
       steps {
         sh 'echo "DEV,UAT,Prod"'
       }
